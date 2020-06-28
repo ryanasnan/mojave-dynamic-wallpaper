@@ -1,4 +1,6 @@
-## Catalina Dynamic Wallpaper
+## Mojave Dynamic Wallpaper
+
+Please visit original repo in https://github.com/caglarturali/catalina-dynamic-wallpaper for detail information
 
 Simple, time-based, macOS style dynamic wallpaper that transitions between the dark and light versions of macOS Catalina's default wallpapers. It also sets the lock screen background to the same image as the desktop background for a consistent look. Designed to be used with [KDEasyMc](https://github.com/caglarturali/KDEasyMc).
 
