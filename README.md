@@ -52,7 +52,7 @@ and dont forget to restart your pc (autostart script is still running even the f
 
 You can control the wallpaper through control script.
 
-`~/bin/catalina` **[OPTIONS...]** or `catalina` **[OPTIONS...]**
+`~/.local/bin/catalina` **[OPTIONS...]** or `catalina` **[OPTIONS...]**
 
 | OPTIONS:        |                                                         |
 | :-------------- | :------------------------------------------------------ |
