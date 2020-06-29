@@ -19,13 +19,17 @@ AUTOSTART_DIR="${HOME}/.config/autostart"
 AUTOSTART_SCRIPTS_DIR="${HOME}/.config/autostart-scripts"
 ```
 
-`BIN_DIR` bin is for your command (binary command)
+`BIN_DIR` is for the command (local binary command)
+
 `THEMES_DIR` is for wallpaper set
-`AUTOSTART_DIR` is for desktop file (exec on directory AUTOSTART_SCRIPTS_DIR)
+
+`AUTOSTART_DIR` is for desktop file (exec on directory `AUTOSTART_SCRIPTS_DIR`) if you are using `DDE`
+
 `AUTOSTART_SCRIPTS_DIR` is for symlink script from `BIN_DIR`
 
-if you uninstall (using command `catalina -u`) all of files in directory above will be removed
-and dont forget to restart your pc
+if you uninstall (using command `catalina -u`) all of files under directory above will be deleted
+
+and dont forget to restart your pc (autostart script is still running even the file is deleted)
 
 ### Screenshot
 
@@ -46,7 +50,9 @@ and dont forget to restart your pc
 
 ### Usage
 
-You can control the wallpaper through control script. `~/bin/catalina` **[OPTIONS...]**
+You can control the wallpaper through control script.
+
+`~/bin/catalina` **[OPTIONS...]** or `catalina` **[OPTIONS...]**
 
 | OPTIONS:        |                                                         |
 | :-------------- | :------------------------------------------------------ |
