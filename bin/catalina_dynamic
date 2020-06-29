@@ -5,6 +5,7 @@
 # https://github.com/caglarturali/catalina-dynamic-wallpaper
 ##
 
+BIN_DIR="${HOME}/.local/bin"
 # Base directory for images.
 BASE_DIR="${HOME}/.local/share/wallpapers/CatalinaDynamic/contents"
 
@@ -14,7 +15,7 @@ while true; do
     if [[ "$old_hour" != "$hour" ]]; then
         # Create a symlink and set linked file as wallpaper.
         ln -fs "$BASE_DIR/images/hourly/$hour.jpg" "$BASE_DIR/images/3840x3840.jpg"
-        ~/bin/setwallpaper "$BASE_DIR/images/3840x3840.jpg"
+        ${BIN_DIR}/setwallpaper "$BASE_DIR/images/3840x3840.jpg"
     fi
     old_hour=$hour
     sleep 1m

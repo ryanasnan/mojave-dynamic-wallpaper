@@ -5,7 +5,7 @@ set -ueo pipefail
 # Installs Catalina Dynamic Wallpaper.
 ##
 
-BIN_DIR="${HOME}/bin"
+BIN_DIR="${HOME}/.local/bin"
 THEMES_DIR="${HOME}/.local/share/wallpapers"
 AUTOSTART_DIR="${HOME}/.config/autostart"
 
@@ -50,8 +50,9 @@ install_wallpaper() {
     fi
     
     # Start it.
-    ${HOME}/bin/catalina --start
-    echo -e "Installation complete. See \e[1m~/bin/catalina --help\e[0m for more information."
+    ${BIN_DIR}/catalina --start
+    echo -e "Installation complete. Command \e[1m~/.local/bin/catalina [OPTIONS]\e[0m or catalina [OPTIONS]."
+    echo -e "`catalina --help`"
 }
 
 while [[ $# -gt 0 ]]; do

@@ -1,8 +1,31 @@
-## Mojave Dynamic Wallpaper
+# Note
 
 Please visit original repo in https://github.com/caglarturali/catalina-dynamic-wallpaper for detail information
 
+this repo just for mojave dynamic wallpaper
+
+## Mojave Dynamic Wallpaper
+
 Simple, time-based, macOS style dynamic wallpaper that transitions between the dark and light versions of macOS Catalina's default wallpapers. It also sets the lock screen background to the same image as the desktop background for a consistent look. Designed to be used with [KDEasyMc](https://github.com/caglarturali/KDEasyMc).
+
+### Concept
+
+Explain code
+
+```bash
+BIN_DIR="${HOME}/.local/bin"
+THEMES_DIR="${HOME}/.local/share/wallpapers"
+AUTOSTART_DIR="${HOME}/.config/autostart"
+AUTOSTART_SCRIPTS_DIR="${HOME}/.config/autostart-scripts"
+```
+
+`BIN_DIR` bin is for your command (binary command)
+`THEMES_DIR` is for wallpaper set
+`AUTOSTART_DIR` is for desktop file (exec on directory AUTOSTART_SCRIPTS_DIR)
+`AUTOSTART_SCRIPTS_DIR` is for symlink script from `BIN_DIR`
+
+if you uninstall (using command `catalina -u`) all of files in directory above will be removed
+and dont forget to restart your pc
 
 ### Screenshot
 
@@ -13,8 +36,8 @@ Simple, time-based, macOS style dynamic wallpaper that transitions between the d
 - Clone the repo.
 
   ```bash
-  git clone https://github.com/caglarturali/catalina-dynamic-wallpaper.git
-  cd catalina-dynamic-wallpaper
+  git clone https://github.com/ryanasnan/mojave-dynamic-wallpaper
+  cd mojave-dynamic-wallpaper
   ```
 
 - Install.
@@ -38,5 +61,6 @@ You can control the wallpaper through control script. `~/bin/catalina` **[OPTION
 
 ### Credits :blush:
 
+- https://github.com/caglarturali/catalina-dynamic-wallpaper.git
 - [macOS Catalina](https://www.apple.com/macos/catalina-preview/)
 - [@RaitaroH](https://gitlab.com/RaitaroH) from GitLab. This project is heavily inspired by his [dynamic-wall](https://gitlab.com/RaitaroH/dynamic-wall) and [KDE-Terminal-Wallpaper-Changer](https://gitlab.com/RaitaroH/KDE-Terminal-Wallpaper-Changer) repos.
